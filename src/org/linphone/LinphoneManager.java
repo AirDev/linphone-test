@@ -244,10 +244,20 @@ public final class LinphoneManager implements LinphoneCoreListener {
 		routeAudioToSpeakerHelper(true);
 		LinphoneCall currentCall = mLc.getCurrentCall();
 		if (currentCall != null && !Hacks.hasBuiltInEchoCanceller()) {
+<<<<<<< HEAD
 			/*disable EC, it is not efficient enough on speaker mode due to bad quality of speakers and saturation*/  
 			currentCall.enableEchoCancellation(false);
 			/* instead we prefer the echo limiter */
 			currentCall.enableEchoLimiter(true);
+=======
+			//121119suzuki change
+			currentCall.enableEchoCancellation(true);
+			currentCall.enableEchoLimiter(false);
+//			/*disable EC, it is not efficient enough on speaker mode due to bad quality of speakers and saturation*/  
+//			currentCall.enableEchoCancellation(false);
+//			/* instead we prefer the echo limiter */
+//			currentCall.enableEchoLimiter(true);
+>>>>>>> d392b22df94360d6e59057607364d6d17a21da96
 		}
 	}
 

@@ -641,7 +641,11 @@
             <echo level="info">----------</echo>
             <echo level="info">Handling RenderScript files...</echo>
             <renderscript executable="${renderscript}"
+<<<<<<< HEAD
                     includePath="${android.renderscript.include.path}"
+=======
+                    includePathRefId="android.renderscript.include.path"
+>>>>>>> d392b22df94360d6e59057607364d6d17a21da96
                     genFolder="${gen.absolute.dir}"
                     resFolder="${out.res.absolute.dir}/raw"
                     targetApi="${project.minSdkVersion}"

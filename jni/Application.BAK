@@ -76,8 +76,4 @@ APP_BUILD_SCRIPT:=$(call my-dir)/Android.mk
 APP_PLATFORM := android-8
 #APP_ABI := armeabi
 APP_ABI := armeabi-v7a armeabi
-<<<<<<< HEAD
 APP_CFLAGS:=-DDISABLE_NEON
-=======
-APP_CFLAGS := -O3 -mcpu=cortex-a8 -mfpu=neon -mfloat-abi=softfp -fPIC -march=armv7-a -ffunction-sections -funwind-tables -fstack-protector -fno-short-enums -fno-exceptions
->>>>>>> d392b22df94360d6e59057607364d6d17a21da96
